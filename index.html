@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristalwolf | IA & Automação</title>
+    <link rel="icon" type="image/png" href="assets/img/logo_var_9_cw.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <header class="header glass-header">
+        <div class="logo-header">
+            <a href="#home" style="text-decoration: none;">
+                <img src="assets/img/logo_var_8_cw.png" alt="Logo Cristalwolf" style="transition: opacity 0.3s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+            </a>
+        </div>
+        
+        <div class="menu-toggle" id="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="mobile-nav" id="mobile-nav">
+            <div class="close-menu" id="close-btn">✕</div>
+            <a href="#home">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#portfolio">Cases</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-nav">
+            <a href="#home">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#portfolio">Cases</a>
+            <a href="#contato">Contato</a>
+        </div>
+        
+       <div class="hero-content">
+            <div class="glowing-circle">
+                <img src="assets/img/logo-branca.png" alt="Logo Cristalwolf" class="floating-logo">
+            </div>
+            
+            <p>Transformo tarefas repetitivas em tempo livre e crio assistentes virtuais inteligentes para alavancar o seu negócio.</p>
+        </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+        <h2>Quem é Cristalwolf?</h2>
+        
+        <div class="profile-container">
+            <img src="assets/img/loba-perfil.png" alt="Foto de Cristalwolf" class="profile-photo">
+        </div>
+        
+        <p>Sou Engenheira de IA e Especialista em MarTech. Unindo mais de 17 anos de vivência em Marketing e Estratégia com a precisão técnica da Engenharia de IA, eu construo pontes entre a tecnologia avançada e as necessidades reais de negócios.</p>
+        <p>Meu foco é democratizar o uso de ferramentas técnicas, substituindo processos manuais por fluxos inteligentes e acessíveis.</p>
+    </section>
+
+    <section class="servicos" id="servicos">
+        <h2>Como posso transformar sua rotina</h2>
+        <div class="cards-container">
+            <div class="card">
+                <h3>🤖 Agentes de IA Customizados</h3>
+                <p>Criação de assistentes virtuais (como o Microsoft Copilot) que conhecem as regras da sua empresa, geram textos no tom de voz da sua marca e não inventam informações.</p>
+            </div>
+            <div class="card">
+                <h3>⚡ Automação de Processos (RPA)</h3>
+                <p>Sabe aquela planilha que demora horas para ser preenchida? Eu desenvolvo robôs e scripts que fazem o trabalho pesado automaticamente, eliminando erros humanos.</p>
+            </div>
+            <div class="card">
+                <h3>🌐 Soluções Web & Apps</h3>
+                <p>Desenvolvimento de aplicativos rápidos, modernos e focados em experiência do usuário e acessibilidade, que funcionam até mesmo offline.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2>Laboratório de Projetos</h2>
+        <div class="portfolio-grid">
+            
+            <div class="portfolio-item" onclick="toggleProject(this)">
+                <div class="portfolio-cover">
+                    <img src="assets/img/pomorato_card_site_cristalwolf_800x450_prop16-9.png" alt="Capa do PomoRato">
+                </div>
+                <div class="portfolio-header">
+                    <h4>🍅 PomoRato</h4>
+                    <p class="short-desc">Aplicativo de Foco e Produtividade para mentes neurodivergentes.</p>
+                    <span class="expand-btn">Ver Detalhes ▼</span>
+                </div>
+                <div class="portfolio-details">
+                    <div class="detail-section">
+                        <h5>⚔️ O Desafio</h5>
+                        <p>Pessoas neurodivergentes precisavam de um método simples e muito visual para gerenciar o tempo sem se sentirem sobrecarregadas com as distrações do dia a dia.</p>
+                    </div>
+                    <div class="detail-section">
+                        <h5>🛠️ A Solução</h5>
+                        <p>Desenvolvimento de um aplicativo mobile intuitivo inspirado na técnica Pomodoro, integrado a um banco de dados em nuvem para salvar o progresso em tempo real.</p>
+                    </div>
+                    <div class="detail-section">
+                        <h5>👑 O Impacto (Em desenvolvimento)</h5>
+                        <p>A ferramenta prova como a união de um design focado na acessibilidade cognitiva com a automação pode transformar a rotina de trabalho de forma leve.</p>
+                        <a href="#contato" class="btn-primary-small mt-2" onclick="event.stopPropagation()">Tenho uma ideia de App</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item" onclick="toggleProject(this)">
+                <div class="portfolio-cover">
+                    <img src="assets/img/laurinha_card_site_cristalwolf_800x450_prop16-9.png" alt="Capa da Laurinha">
+                </div>
+                <div class="portfolio-header">
+                    <h4>🤖 Projeto Laurinha</h4>
+                    <p class="short-desc">Agente de Inteligência Artificial para Automação de Marketing.</p>
+                    <span class="expand-btn">Ver Detalhes ▼</span>
+                </div>
+                <div class="portfolio-details">
+                    <div class="detail-section">
+                        <h5>⚔️ O Desafio</h5>
+                        <p>A equipe perdia semanas cruzando dados manualmente para planejar campanhas, um processo lento, caro e sujeito a muitos erros humanos.</p>
+                    </div>
+                    <div class="detail-section">
+                        <h5>🛠️ A Solução</h5>
+                        <p>Criação da Laurinha, uma assistente virtual treinada com as regras de negócio da empresa, capaz de assumir o trabalho braçal de análise de dados.</p>
+                    </div>
+                    <div class="detail-section">
+                        <h5>👑 O Impacto</h5>
+                        <p>O tempo de planejamento caiu de semanas para minutos. A equipe parou de preencher planilhas e voltou a focar puramente na criatividade e estratégia.</p>
+                        <a href="#contato" class="btn-primary-small mt-2" onclick="event.stopPropagation()">Quero um Agente de IA</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item extra-project" style="display: none;" onclick="toggleProject(this)">
+                <div class="portfolio-cover">
+                    <img src="assets/img/calmai_card_site_cristalwolf_800x450_prop16-9.png" alt="Capa CalmAI">
+                </div>
+                <div class="portfolio-header">
+                    <h4>🧘‍♀️ CalmAI</h4>
+                    <p class="short-desc">Assistente de bem-estar e gestão de ansiedade.</p>
+                    <span class="expand-btn">Ver Detalhes ▼</span>
+                </div>
+                <div class="portfolio-details">
+                    <div class="detail-section">
+                        <h5>⚔️ O Desafio</h5>
+                        <p>Criar um ambiente digital seguro e acolhedor para ajudar usuários a gerenciarem picos de estresse através de respostas inteligentes e guiadas.</p>
+                    </div>
+                    <div class="detail-section">
+                        <h5>🛠️ A Solução</h5>
+                        <p>Implementação de fluxos interativos e suaves, unindo programação front-end calmante com lógicas de resposta rápida.</p>
+                    </div>
+                    <div class="detail-section">
+                        <h5>👑 O Impacto (Em desenvolvimento)</h5>
+                        <p>Uma ferramenta portátil de alívio imediato, desenhada para intervir positivamente no bem-estar digital.</p>
+                        <a href="#contato" class="btn-primary-small mt-2" onclick="event.stopPropagation()">Saber mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item extra-project" style="display: none;" onclick="toggleProject(this)">
+                <div class="portfolio-cover">
+                    <img src="assets/img/squeakfit_card_site_cristalwolf_800x450_prop16-9.png" alt="Capa SqueakFit">
+                </div>
+                <div class="portfolio-header">
+                    <h4>💪 SqueakFit</h4>
+                    <p class="short-desc">Plataforma gamificada para acompanhamento de atividades físicas.</p>
+                    <span class="expand-btn">Ver Detalhes ▼</span>
+                </div>
+                <div class="portfolio-details">
+                    <div class="detail-section">
+                        <h5>⚔️ O Desafio</h5>
+                        <p>Manter a consistência em rotinas de exercícios é difícil. Era necessário um sistema que tornasse o acompanhamento divertido e menos burocrático.</p>
+                    </div>
+                    <div class="detail-section">
+                        <h5>🛠️ A Solução</h5>
+                        <p>Desenvolvimento de uma interface gamificada onde métricas de saúde se transformam em conquistas visuais.</p>
+                    </div>
+                    <div class="detail-section">
+                        <h5>👑 O Impacto (Em desenvolvimento)</h5>
+                        <p>Aumenta o engajamento através de recompensas visuais e acompanhamento automatizado de progresso.</p>
+                        <a href="#contato" class="btn-primary-small mt-2" onclick="event.stopPropagation()">Saber mais</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="ver-mais-container">
+            <button id="btn-ver-mais" class="btn-secondary" onclick="toggleMoreProjects()">Ver arquivo completo 📂</button>
+        </div>
+    </section>
+
+    <section class="contato" id="contato">
+        <h2>Vamos conversar?</h2>
+        <p>Me conte um pouco sobre o seu desafio. Como posso ajudar você a ganhar mais tempo e eficiência hoje?</p>
+        
+        <form id="contactForm" name="contato" method="POST" data-netlify="true" action="/" class="form-contato">
+            
+            <input type="hidden" name="form-name" value="contato">
+
+            <label for="name">Seu Nome *</label>
+            <input type="text" id="name" name="nome" required placeholder="Como prefere ser chamado?">
+
+            <label for="whatsapp">WhatsApp (Opcional)</label>
+            <input type="tel" id="whatsapp" name="whatsapp" placeholder="(XX) 9XXXX-XXXX">
+
+            <label for="email">Seu E-mail *</label>
+            <input type="email" id="email" name="email" required placeholder="seu@email.com">
+
+            <label for="message">Sua Mensagem *</label>
+            <textarea id="message" name="mensagem" rows="5" required placeholder="Descreva brevemente o que você precisa..."></textarea>
+
+            <button type="submit" class="btn-primary">Enviar Mensagem</button>
+            <div class="divider">OU</div>
+            
+            <button type="button" onclick="copyEmail()" class="btn-secondary">
+                📧 Prefiro enviar um e-mail direto
+            </button>
+            
+        </form>
+
+        <script>
+            const handleSubmit = (event) => {
+                event.preventDefault();
+                const myForm = event.target;
+                const formData = new FormData(myForm);
+                const btn = myForm.querySelector("button[type='submit']");
+                const textoOriginal = btn.innerText;
+    
+                btn.innerText = "Enviando... 🚀";
+                btn.disabled = true;
+            
+                fetch("/", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                    body: new URLSearchParams(formData).toString(),
+                })
+                .then(() => {
+                    alert("Sinal recebido com sucesso! 🐺💜 Entrarei em contato em breve.");
+                    myForm.reset();
+                })
+                .catch((error) => {
+                    alert("Opa, houve uma interferência no sinal. Por favor, me chame no LinkedIn!");
+                    console.error(error);
+                })
+                .finally(() => {
+                    btn.innerText = textoOriginal;
+                    btn.disabled = false;
+                });
+            };
+            
+            const formElement = document.getElementById("contactForm");
+            if(formElement) {
+                formElement.addEventListener("submit", handleSubmit);
+            }
+            function copyEmail() {
+                const email = "cristalwolf.artista@gmail.com";
+                navigator.clipboard.writeText(email).then(() => {
+                    alert("E-mail copiado com sucesso! 🐺💜\n\nAgora é só colar no seu aplicativo de e-mails favorito.");
+                }).catch(err => {
+                    console.error('Erro ao copiar: ', err);
+                    alert("Meu e-mail é: " + email);
+                });
+            }
+
+            // --- SISTEMA INTELIGENTE DO MENU SUSPENSO ---
+            const menuBtn = document.getElementById('menu-btn');
+            const navMenu = document.getElementById('mobile-nav');
+            const closeBtn = document.getElementById('close-btn');
+            const navLinks = navMenu.querySelectorAll('a');
+            let menuLocked = false; // Controla se o usuário "travou" o menu com um clique
+
+            // 1. Mostrar ao passar o mouse (Hover)
+            menuBtn.addEventListener('mouseenter', () => {
+                if (!menuLocked) navMenu.classList.add('open');
+            });
+
+            // 2. Esconder ao tirar o mouse do botão
+            menuBtn.addEventListener('mouseleave', () => {
+                // Pequeno atraso para dar tempo do usuário mover o mouse para o menu
+                setTimeout(() => {
+                    if (!menuLocked && !navMenu.matches(':hover')) {
+                        navMenu.classList.remove('open');
+                    }
+                }, 150);
+            });
+
+            // 3. Esconder ao tirar o mouse de cima do próprio menu
+            navMenu.addEventListener('mouseleave', () => {
+                if (!menuLocked) navMenu.classList.remove('open');
+            });
+
+            // 4. Clicar no botão: Trava ou Destrava o menu na tela
+            menuBtn.addEventListener('click', (e) => {
+                e.stopPropagation(); // Evita conflito com o clique de fechar fora
+                menuLocked = !menuLocked;
+                if(menuLocked) {
+                    navMenu.classList.add('open');
+                } else {
+                    navMenu.classList.remove('open');
+                }
+            });
+
+            // 5. Clicar em qualquer lugar de fora fecha o menu
+            document.addEventListener('click', (e) => {
+                if (!navMenu.contains(e.target) && !menuBtn.contains(e.target)) {
+                    menuLocked = false;
+                    navMenu.classList.remove('open');
+                }
+            });
+
+            // 6. Clicar no "X" ou nos links também fecha tudo
+            closeBtn.addEventListener('click', () => {
+                menuLocked = false;
+                navMenu.classList.remove('open');
+            });
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    menuLocked = false;
+                    navMenu.classList.remove('open');
+                });
+            });
+
+            // --- SISTEMA DAS GAVETAS DE PROJETOS ---
+            function toggleProject(element) {
+                element.classList.toggle('active');
+                const btn = element.querySelector('.expand-btn');
+                if (element.classList.contains('active')) {
+                    btn.innerText = "Esconder Detalhes ▲";
+                } else {
+                    btn.innerText = "Ver Detalhes ▼";
+                }
+            }
+
+            // --- SISTEMA DE VER MAIS PROJETOS ---
+            function toggleMoreProjects() {
+                const extraProjects = document.querySelectorAll('.extra-project');
+                const btn = document.getElementById('btn-ver-mais');
+                let isShowing = false;
+
+                extraProjects.forEach(proj => {
+                    if (proj.style.display === 'none' || proj.style.display === '') {
+                        proj.style.display = 'block'; // Mostra o projeto
+                        proj.classList.add('show'); // Aplica a animação
+                        isShowing = true;
+                    } else {
+                        proj.style.display = 'none'; // Esconde novamente
+                        proj.classList.remove('show');
+                        isShowing = false;
+                    }
+                });
+
+                // Muda o texto do botão dependendo do estado
+                if (isShowing) {
+                    btn.innerText = "Esconder arquivo ▲";
+                } else {
+                    btn.innerText = "Ver arquivo completo 📂";
+                }
+            }
+        </script>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Cristalwolf Dias - Programação & Automatização. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
